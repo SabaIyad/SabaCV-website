@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 {
+      text-shadow: 2px 2px 5px rgb(173, 216, 230), 4px 4px 10px rgb(0, 51, 102);
+      color: rgb(0, 51, 102);
+      font-size: 20pt;
+      font-family: 'Bodoni MT', serif;
+      font-weight: bold;
+    }
+
+    .header {
+      width: 1228px;
+      font-family: 'Times New Roman', serif;
+      color: rgb(0, 51, 102);
+    }
+
+    .header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+    }
+
+    .info, .skills {
+      font-family: 'Bodoni MT', serif;
+      color: rgb(0, 51, 102);
+      width: 1190px;
+      border-radius: 15px;
+      background-color: rgb(240, 248, 255);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .info ul {
+      font-size: 16pt;
+      line-height: 1.8;
+    }
+
+    .skills {
+      position: relative;
+    }
+
+    .skills h2 {
+  position: relative;
+  z-index: 2;
+  background-color: rgb(240, 248, 255);
+  font-size: 20pt;
+}
+
+
+    .line-box {
+      height: 8px;
+      position: absolute;
+    }
+
+    .line {
+      width: 150px;
+      height: 4px;
+      background-color: rgb(0, 51, 102);
+      position: absolute;
+      top: 2px;
+      left: 0;
+      border-radius: 2px;
+      animation-name: moveMeLine;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes moveMeLine {
+      from { left: 0px; }
+      to { left: 1040px; }
+    }
+
+    .skills table {
+      width: 100%;
+      font-size: 16pt;
+    }
+
+    .skills th, .skills td {
+      text-align: left;
+    }
+
+    .interests-container {
+      width: 1190px;
+    }
+
+    .interest-box {
+  color: rgb(0, 51, 102);
+  border-radius: 15px;
+  width: 260px;
+  height: 140px; 
+  align-items: center;
+  font-size: 15pt; 
+  font-family: 'Bodoni MT', serif;
+  text-align: center;
+  background-color: rgb(224, 240, 255);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+  </style>
+</head>
+<body>
+<div style="
+  background-color: rgb(0, 51, 102);
+  color: white;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-family: 'Bodoni MT', serif;
+  text-align: center;
+  line-height: 40px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  animation-name: moveMe;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 1000;">
+  Page 1
+</div>
+
+<style>
+  @keyframes moveMe {
+    from { width: 120px; height: 40px; }
+    to { width: 80px; height: 40px; }
+  }
+</style>
+
+  <div class="header" id="top">
+    <img src="s.png" alt="Profile Image">
+    <div class="text">
+      <h1 id="h1" style="cursor:not-allowed;"
+          onMouseOver="document.getElementById('h1').style.color='rgb(204, 0, 0)'; document.getElementById('h1').style.backgroundColor='rgb(255, 255, 153)'; document.getElementById('h1').style.fontSize='30pt';" 
+          onMouseOut="document.getElementById('h1').style.color='rgb(0, 51, 102)'; document.getElementById('h1').style.backgroundColor='rgb(255, 255, 255)'; document.getElementById('h1').style.fontSize='20pt';">
+        Saba ALbzoor
+      </h1>
+
+      <h1 id="h5" style="cursor:zoom-in;"
+          onMouseOver="document.getElementById('h5').style.color='rgb(204, 0, 0)'; document.getElementById('h5').style.backgroundColor='rgb(255, 255, 153)'; document.getElementById('h5').style.fontSize='30pt';" 
+          onMouseOut="document.getElementById('h5').style.color='rgb(0, 51, 102)'; document.getElementById('h5').style.backgroundColor='rgb(255, 255, 255)'; document.getElementById('h5').style.fontSize='20pt';">
+        Management Information System (MIS)
+      </h1>
+
+      <h1 id="h6" style="cursor: help; color: blue; text-shadow: 2px 2px 5px grey, 4px 4px 10px blue;"
+          onMouseOver="document.getElementById('h6').style.color='rgb(204, 0, 0)'; document.getElementById('h6').style.backgroundColor='rgb(255, 255, 153)'; document.getElementById('h6').style.fontSize='30pt';" 
+          onMouseOut="document.getElementById('h6').style.color='rgb(0, 51, 102)'; document.getElementById('h6').style.backgroundColor='rgb(255, 255, 255)'; document.getElementById('h6').style.fontSize='20pt';">
+        Business Analyst
+      </h1>
+    </div>
+  </div>
+
+  <div class="info">
+    <h2>Personal Information</h2>
+    <ul>
+      <li>👩‍🦰 <b>Gender:</b> Female</li>
+      <li>📅 <b>DOB:</b> 9/7/2004</li>
+      <li>📞 <b>Phone:</b> 0569249056</li>
+      <li>✉️ <b>Email:</b> bzoorsabaa@gmail.com</li>
+      <li>📍 <b>Address:</b> Raba – Jenin – Palestine</li>
+    </ul>
+  </div>
+
+  <div class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="line-box"><div class="line"></div></div>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Language</td>
+        <td>English, Arabic</td>
+      </tr>
+      <tr>
+        <td>Computer</td>
+        <td>Word, Excel, PowerPoint</td>
+      </tr>
+    </table>
+  </div>
+
+  <marquee scrollamount="10" style="color: rgb(119, 136, 153); font-size: 22pt; font-weight: bold; margin-top: 40px;">
+    INTERESTS
+  </marquee>
+
+ <div class="interests-container" id="interests">
+  <table style="width: 1190px; border-spacing: 20px;">
+    <tr>
+      <td><div class="interest-box">📷 Photography & Visual Design</div></td>
+      <td><div class="interest-box">🌍 Traveling & Exploring Cultures</div></td>
+      <td><div class="interest-box">✍️ Creative Writing & Blogging</div></td>
+      <td><div class="interest-box">🤝 Leadership and Team Building</div></td>
+    </tr>
+  </table>
+</div>
+
+
+  <div style="text-align: center; margin-top: 40px; font-size: 16pt;">
+    <a href="#top" style="margin: 0 15px; color: rgb(0, 51, 102); text-decoration: none;">Top</a> |
+    <a href="#skills" style="margin: 0 15px; color: rgb(0, 51, 102); text-decoration: none;">Skills</a> |
+    <a href="#interests" style="margin: 0 15px; color: rgb(0, 51, 102); text-decoration: none;">Interests</a> |
+    <a href="p2.html" style="margin: 0 15px; color: rgb(0, 51, 102); text-decoration: none;">Next Page →</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: rgb(224, 240, 255);
+      font-family: 'Bodoni MT', serif;
+      color: rgb(0, 51, 102);
+      line-height: 1.6;
+    }
+
+    .section-header {
+      align-items: center;
+    }
+
+    .section-title {
+      background-color: rgb(52, 103, 235);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      transform: skewY(-5deg);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(52, 103, 235, 0.3);
+    }
+
+    .section-title span {
+      transform: skewY(5deg);
+    }
+
+    .objective-container,
+    .education-container {
+      width: 100%;
+      max-width: 1200px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(52, 103, 235, 0.2);
+      font-size: 20px;
+      color: rgb(0, 51, 102);
+    }
+
+    ul.cert-list {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    ul.cert-list li {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(52, 103, 235, 0.2);
+      cursor: default;
+      font-size: 18px;
+      color: rgb(0, 51, 102);
+      border-radius: 6px;
+    }
+
+    ul.cert-list li:hover {
+      background-color: rgb(229, 239, 255);
+      transform: translateX(10px);
+      box-shadow: 0 4px 8px rgba(52, 103, 235, 0.3);
+      
+    }
+
+    .contact-form {
+      width: 100%;
+      max-width: 1000px;
+      background-color: white;
+      border-left: 6px  rgb(52, 103, 235);
+
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(52, 103, 235, 0.2);
+      font-size: 18px;
+      color: rgb(0, 51, 102);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      font-size: 16px;
+     
+      border-radius: 6px;
+    }
+
+    .contact-form button {
+      font-size: 16px;
+      background-color: rgb(52, 103, 235);
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: rgb(30, 80, 180);
+    
+    }
+
+    .color-button {
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: 'Bodoni MT', serif;
+      font-size: 14pt;
+    }
+
+  </style>
+</head>
+
+<body>
+<div style="
+  background-color: rgb(0, 51, 102);
+  color: white;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-family: 'Bodoni MT', serif;
+  text-align: center;
+  line-height: 40px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  animation-name: moveMe;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 1000;">
+  Page 2
+</div>
+
+<style>
+  @keyframes moveMe {
+    from { width: 120px; height: 40px; }
+    to { width: 80px; height: 40px; }
+  }
+</style>
+
+<br/>
+  <div class="section-header">
+    <br/>
+    <div class="section-title"><span>OBJECTIVE</span></div>
+  </div><br>
+  <br/><br/>
+  <div class="objective-container" id="obj" onMouseOver="document.getElementById('obj').style.color='rgb(52, 103, 235)'; document.getElementById('obj').style.backgroundColor='rgb(229, 239, 255)';" onMouseOut="document.getElementById('obj').style.color='rgb(0, 51, 102)'; document.getElementById('obj').style.backgroundColor='white';">
+  To obtain a System Analyst role where I can apply my MIS background in analyzing data,<br/>identifying system needs, and optimizing IT processes to contribute to organizational growth and innovation.
+</div>
+<br/>
+  <br/>
+  <div class="section-header"><br>
+    <br/>
+    <div class="section-title"><span>EDUCATION</span></div><br/>
+  </div><br>
+  <br/>
+  <div class="education-container"><br/>
+    🎓 Arab American University – Palestine<br/>Bachelor of Management Information Systems (MIS)<br/>October 2022 – February 2026<br/>GPA: 3.6
+  </div>
+  <br/>
+  <div class="section-header"><br/>
+    <br/>
+    <div class="section-title"><span>CERTIFICATIONS</span></div><br/>
+  </div><br/>
+  <br/>
+  <ul class="cert-list"><br/>
+    <li>2025: AI and Machine Learning Certificate — Hassib Sabbagh IT Center of Excellence</li>
+    <li>2025: Creative Leadership Certificate — Hassib Sabbagh IT Center of Excellence</li>
+    <li>2024: Successful Participation – FIRST LEGO League Regional Tournament — Arab American University (AAUP)</li>
+    <li>2023: Dean’s Honor List – Top Students of Faculty of Business — Arab American University (AAUP)</li>
+    <li>2020-2022: English Access — Arab American University-Palestine</li>
+    <li>2019: Training Course in Go Code – Web Development 1 (30 Training Hours) — Hassib Sabbagh IT Center of Excellence</li>
+  </ul>
+  <br/>
+  <div class="section-header"><br/>
+    <br/>
+    <div class="section-title"><span>CONTACT ME</span></div><br/>
+  </div><br/>
+  <br/>
+
+  <div class="contact-form">
+    Name:<br/>
+    <input type="text" name="name"><br/>
+
+    Email:<br/>
+    <input type="text" name="email"><br/>
+
+    Message:<br/>
+    <textarea name="message" rows="6"></textarea><br/>
+
+    <button onclick="showMessage()">Send</button>
+  </div>
+
+  <br/>
+  <div style="text-align: center;">
+    <button class="color-button" onclick="changeBg('rgb(224, 240, 255)')" style="background-color: rgb(224, 240, 255); color: rgb(0, 51, 102);">
+      Soft Blue
+    </button>
+
+    <button class="color-button" onclick="changeBg('rgb(0, 51, 102)')" style="background-color: rgb(0, 51, 102); color: white;">
+      Deep Navy
+    </button>
+
+    <button class="color-button" onclick="changeBg('rgb(245, 245, 245)')" style="background-color: rgb(245, 245, 245); color: rgb(0, 51, 102);">
+      Light Gray
+    </button>
+
+    <a href="p1.html">
+      <button class="color-button" style="background-color: rgb(255, 255, 255); color: rgb(0, 51, 102);">
+        ⬅ Back to First Page
+      </button>
+    </a>
+  </div>
+  <br/>
+  <div style="text-align: center;">
+    <button onclick="NightMode()" style="font-size: 16pt; border-radius: 10px; background-color: rgb(0, 51, 102); color: white; cursor:pointer;">
+      Night mode
+    </button>
+  </div>
+
+  <script>
+    function changeBg(color) {
+      document.body.style.backgroundColor = color;
+      if (color == 'rgb(0, 51, 102)') {
+        document.body.style.color = 'white';
+      } else {
+        document.body.style.color = 'rgb(0, 51, 102)';
+      }
+    }
+
+    function NightMode() {
+      var body = document.body;
+      if (body.style.backgroundColor == "black") {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+      } else {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+      }
+    }
+
+    function showMessage() {
+      alert("Message sent!");
+    }
+  </script>
+  
+
+</body>
+</html>
